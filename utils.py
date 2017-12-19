@@ -64,6 +64,8 @@ def merge(images, size):
 
 def imsave(images, size, path):
   image = np.squeeze(merge(images, size))
+  print(type(image))
+  print(image)
   np.savetxt("img.txt", image)
   return scipy.misc.imsave(path, image)
 
