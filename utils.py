@@ -66,6 +66,7 @@ def merge(images, size):
 
 def imsave(images, size, path):
   image = np.squeeze(merge(images, size))
+  print(image)
   return scipy.misc.imsave(path, image)
 
 def center_crop(x, crop_h, crop_w,
